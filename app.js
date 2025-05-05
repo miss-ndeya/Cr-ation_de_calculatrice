@@ -61,41 +61,152 @@ class Calculatrice extends React.Component {
           <form className=" bg-white mx-auto  w-100 px-3 pt-3 rounded-3">
             <h1 className="fs-6">Ma calculatrice</h1>
             <div className="display d-flex flex-column border">
-              <Input type="text" className="border-0 px-3 fw-bold fs-5" value={value} onChange={this.handleChange} disabled="disabled" />
-              <Input type="text" className="border-0 px-3 fw-bold fs-5  text-start " disabled="disabled" value={result} onChange={this.handleChange} />
+              <Input
+                type="text"
+                className="border-0 px-3 fw-bold fs-5"
+                value={value}
+                onChange={this.handleChange}
+                disabled="disabled"
+              />
+              <Input
+                type="text"
+                className="border-0 px-3 fw-bold fs-5  text-start "
+                disabled="disabled"
+                value={result}
+                onChange={this.handleChange}
+              />
             </div>
-
             <div className="pt-4 col-12 mx-auto m-0 d-flex gap-2">
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="AC" onClick={this.handleDeleteAll} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="/" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="%" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="DE" onClick={this.handleDelete} />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="AC"
+                onClick={this.handleDeleteAll}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="/"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="%"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="DE"
+                onClick={this.handleDelete}
+              />
             </div>
             <div className="col-12 mx-auto m-0 d-flex gap-2">
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="7" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="8" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="9" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="*" onClick={this.handleCalcul} />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="7"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="8"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="9"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="*"
+                onClick={this.handleCalcul}
+              />
             </div>
             <div className="col-12 mx-auto m-0 d-flex gap-2">
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="4" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow" value="5" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark me-1 my-2 shadow" value="6" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark  my-2 shadow" value="-" onClick={this.handleCalcul} />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="4"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark my-2 shadow"
+                value="5"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark me-1 my-2 shadow"
+                value="6"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark  my-2 shadow"
+                value="-"
+                onClick={this.handleCalcul}
+              />
             </div>
             <div className="col-12 mx-auto m-0 d-flex gap-2">
-              <Input type="button" className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow" value="1" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow" value="2" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow" value="3" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow" value="+" onClick={this.handleCalcul} />
+              <Input
+                type="button"
+                className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow"
+                value="1"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow"
+                value="2"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow"
+                value="3"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25  rounded-3 border border-dark fw-bold text-dark  shadow"
+                value="+"
+                onClick={this.handleCalcul}
+              />
             </div>
             <div className="col-12 mx-auto m-0 d-flex gap-2">
-              <Input type="button" className="btn w-50 rounded-3 border border-dark fw-bold text-dark  my-2 shadow" value="0" onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25 rounded-3 border border-dark fw-bold text-dark  my-2 shadow" value="." onClick={this.handleCalcul} />
-              <Input type="button" className="btn w-25  rounded-3 border border-dark fw-bold text-dark  my-2 shadow" value="DE" onClick={this.handleDelete} />
+              <Input
+                type="button"
+                className="btn w-50 rounded-3 border border-dark fw-bold text-dark  my-2 shadow"
+                value="0"
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25 rounded-3 border border-dark fw-bold text-dark  my-2 shadow"
+                value="."
+                onClick={this.handleCalcul}
+              />
+              <Input
+                type="button"
+                className="btn w-25  rounded-3 border border-dark fw-bold text-dark  my-2 shadow"
+                value="DE"
+                onClick={this.handleDelete}
+              />
             </div>
             <div className="pb-2 col-12 m-0">
-              <Input type="button" className="btn w-100 rounded-3 border border-dark fw-bold text-dark  my-2 shadow" value="=" onClick={this.handleResult} />
+              <Input
+                type="button"
+                className="btn w-100 rounded-3 border border-dark fw-bold text-dark  my-2 shadow"
+                value="="
+                onClick={this.handleResult}
+              />
             </div>
           </form>
         </div>
